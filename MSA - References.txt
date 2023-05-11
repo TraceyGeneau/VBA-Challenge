@@ -1,0 +1,5 @@
+Sorry I realized my references did not get copied into the word document.  
+
+'Reference FormatPercentage https://excelchamps.com/vba/functions/formatpercent/
+'Reference Autofit https://www.automateexcel.com/vba/autofit-columns-rows/
+'Reference How to do Min and Max in a Loop - https://www.youtube.com/watch?v=o2gHMOTNyB4
