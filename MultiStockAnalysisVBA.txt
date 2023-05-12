@@ -1,9 +1,10 @@
 Sub Multi_Year_Stock_Analysis()
 
-
      Dim WS As Worksheet
      For Each WS In ThisWorkbook.Worksheets
-         
+              
+      
+    
 
 
 
@@ -100,7 +101,7 @@ For i = 2 To LR
     YClosed = 0
 
     'Add to YearOpenStarti will incrase by one at the end of
-    YearOpenStarti = i + 2
+    YearOpenStarti = i + 1
   
     'Reset the Credit Total
     TotalVolume = 0
@@ -140,7 +141,7 @@ Columns("I:L").EntireColumn.AutoFit
 LRG = Range("K" & Rows.Count).End(xlUp).Row
 
 Dim b As Long
-Dim p As Long
+Dim x As Long
 Dim w As Long
 
 Dim GIncrease As Double
@@ -163,18 +164,19 @@ GIncrease = Range("K" & b).Value
 Range("P2").Value = FormatPercent(GIncrease)
 Range("O2").Value = TickerName
 TickerName = Cells(b, 9).Value
+
 End If
 Next b
 
 'Find Greatest Percent Decrease
-For p = 2 To LRG
-If Cells(p, 11).Value <= GDecrease Then
-GDecrease = Range("K" & p).Value
+For x = 2 To LRG
+If Cells(x, 11).Value <= GDecrease Then
+GDecrease = Range("K" & x).Value
 Range("P3").Value = FormatPercent(GDecrease)
 Range("O3").Value = TickerName
-TickerName = Cells(p, 9).Value
+TickerName = Cells(x, 9).Value
 End If
-Next p
+Next x
 
 'Find the greatest Total Volume
 For w = 2 To LRG
@@ -189,6 +191,16 @@ Next w
 'Fix column width
 Columns("N:P").EntireColumn.AutoFit
 
+
+
 Next WS
 
+
 End Sub
+
+
+'Reference FormatPercentage https://excelchamps.com/vba/functions/formatpercent/
+'Reference Autofit https://www.automateexcel.com/vba/autofit-columns-rows/
+'Reference How to do Min and Max in a Loop - https://www.youtube.com/watch?v=o2gHMOTNyB4
+
+
