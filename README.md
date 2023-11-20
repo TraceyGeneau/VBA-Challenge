@@ -8,3 +8,18 @@ Clone or download the repository to your local machine.
 Open the Excel workbook containing the stock data.
 Run the VBA script to obtain comprehensive insights into each stock's performance.
 Feel free to reach out for any questions or improvements you'd like to contribute. Happy coding! 🚀📊
+
+## 2018
+<br/>
+
+![](https://github.com/TraceyGeneau/VBA-Challenge/blob/main/Multiyear%202018.jpg)
+
+## 2019
+<br/>
+
+![](https://github.com/TraceyGeneau/VBA-Challenge/blob/main/Multiyear%202019.jpg)
+
+## 2020
+<br/>
+
+![](https://github.com/TraceyGeneau/VBA-Challenge/blob/main/Multiyear%202020.jpg)
